@@ -1,7 +1,10 @@
 <!-- Please feel free to play around with html / css / bootstrap -->
 <div class="container">
     <h1>Demo app</h1>
+<!--    aici folosim un mecasim angular prin care iteram prin variabila cars din cars.component.ts-->
     <div *ngFor="let car of cars">
+<!--    aici facem referire la variabilele car pe masura ce iteram in ngFor-ul de pe linia 5 si folosim un pipe '|'-->
+<!--    pentru a transforma inputul in format json ca output-->
         {{car | json}}
     </div>
 </div>
